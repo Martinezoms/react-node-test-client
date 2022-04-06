@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Please enter your name and pick the Sectors you are currently involved in.</h3>
+      <hr />
+      <div className="App__container">
+        <form>
+          <div className="item">
+            <label htmlFor="name">
+              Name<span>*</span>
+            </label>
+            <input type="text" id="name" name="name" placeholder="Your name..." required />
+          </div>
+
+          <div className="item">
+            <label htmlFor="sectors">
+              Sectors<span>*</span>
+            </label>
+            <div id="sectors" className="item__sector">
+              <select required>
+                <option disabled>Select sector</option>
+                <option>Manufacturing</option>
+                <option>Other</option>
+                <option>Service</option>
+              </select>
+            </div>
+            <div className="item">
+              <input type="checkbox" id="agreement" name="agreement" required />
+              <label htmlFor="agreement">Agree to terms</label>
+            </div>
+            <div className="item">
+              <input type="submit" name="Save" value="Save" />
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
