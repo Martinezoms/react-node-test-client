@@ -1,0 +1,108 @@
+.admin__container {
+  // background-color: whitesmoke;
+  min-width: 30vw;
+  padding: 2rem;
+
+  p span{
+    color: red;
+  }
+
+  & .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    input {
+      margin: 1rem 0;
+      padding: 10px 10px;
+      font-size: 18px;
+     border: 1px solid black;
+
+     &:focus {
+       outline: none;
+     }
+
+     &:disabled {
+       opacity: 0.3;
+       cursor: not-allowed;
+     }
+    }
+
+    input[type=submit] {
+      width: 100px;
+      cursor: pointer;
+      background: #04AA6D;
+      border-radius: 5px;
+      border: 0 ;
+      color:white;
+    }
+
+    select {
+      width: 100%;
+      margin: 1rem 0;
+      padding: 10px 10px;
+      font-size: 18px;
+      border: 1px solid black;
+      background-color: white;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+    }
+
+    button {
+      margin: 1rem 0;
+      padding: 10px 10px;
+      font-size: 18px;
+      width: 100px;
+      cursor: pointer;
+      background: rgb(252, 13, 13);
+      border-radius: 5px;
+      border: 0 ;
+      color:white;
+
+      &:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+    }
+
+    label {
+
+      span {
+        color:red;
+      }
+    }
+  }
+
+}
+
+.industry-checkbox {
+  display: flex;
+  gap: 1rem;
+
+  & .item {
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      input {
+        cursor: pointer;
+      }
+
+  }
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+}
