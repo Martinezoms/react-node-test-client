@@ -1,0 +1,25 @@
+.tag__container {
+  display: flex;
+  gap: 20px;
+  max-width: 150px;
+  align-items: center;
+  justify-content: space-between;
+  background: #e2e2e2;
+  padding: 10px;
+
+  p {
+    margin: 0;;
+    font-size: 10px;
+  }
+
+  svg {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

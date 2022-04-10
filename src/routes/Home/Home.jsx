@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.scss';
 
 const Home = () => {
+  const [edit, setEdit] = useState(false);
   return (
     <div className="home__container">
       <h3>Please enter your name and pick the Sectors you are currently involved in.</h3>
@@ -21,7 +22,7 @@ const Home = () => {
           </label>
           <div id="sectors" className="item__sector">
             <select required>
-              <option disabled>Select sector</option>
+              <option disabled>Select option</option>
               <option>Manufacturing</option>
               <option>Other</option>
               <option>Service</option>
@@ -35,9 +36,11 @@ const Home = () => {
             <div className="item">
               <input type="submit" name="Save" value="Save" />
             </div>
-            <div className="item">
-              <button>Edit</button>
-            </div>
+            {edit && (
+              <div className="item">
+                <button>Edit</button>
+              </div>
+            )}
           </div>
         </div>
       </form>

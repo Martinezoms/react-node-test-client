@@ -1,10 +1,17 @@
 .admin__container {
-  // background-color: whitesmoke;
   min-width: 30vw;
   padding: 2rem;
 
+  form {
+    width: 50%;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+  }
+
   p span{
-    color: red;
+    color: #c50101;
   }
 
   & .item {
@@ -28,8 +35,9 @@
      }
     }
 
+
     input[type=submit] {
-      width: 100px;
+      width: 70px;
       cursor: pointer;
       background: #04AA6D;
       border-radius: 5px;
@@ -56,27 +64,11 @@
       }
     }
 
-    button {
-      margin: 1rem 0;
-      padding: 10px 10px;
-      font-size: 18px;
-      width: 100px;
-      cursor: pointer;
-      background: rgb(252, 13, 13);
-      border-radius: 5px;
-      border: 0 ;
-      color:white;
-
-      &:disabled {
-        opacity: 0.3;
-        cursor: not-allowed;
-      }
-    }
 
     label {
 
       span {
-        color:red;
+        color:#c50101;
       }
     }
   }
@@ -102,7 +94,63 @@
   }
 }
 
+.sub-sector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 1;
+
+  input[type=submit] {
+    width: auto;
+  }
+
+  button {
+    cursor: pointer;
+    margin: 1rem 0;
+      padding: 10px 10px;
+      font-size: 18px;
+    background: #04AA6D;
+    border-radius: 5px;
+    border: 0 ;
+    color:white;
+  }
+}
+
 .form-buttons {
   display: flex;
   gap: 1rem;
+}
+
+.add-class {
+  border: 1px solid black;
+  padding: 10px 10px;
+  text-align: center;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  p{
+    margin: 0;
+  }
+}
+
+.admin__sector-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+  }
+}
+
+.group-tags {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:5px;
 }

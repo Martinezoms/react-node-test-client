@@ -1,0 +1,31 @@
+.accordion {
+  transition: all 0.5s ease-in-out;
+  p {
+    margin: 0;
+  }
+}
+
+.accordion-title {
+  display: flex;
+  padding: 0.3rem;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity:0.5;
+  }
+
+
+
+}
+
+
+
+
+.accordion-content {
+  padding: 0.3rem;
+  background: white;
+
+}
