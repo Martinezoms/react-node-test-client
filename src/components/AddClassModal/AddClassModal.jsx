@@ -12,7 +12,7 @@ const AddClassModal = ({ setOpenClassModal }) => {
         </div>
         <div className="item">
           <label htmlFor="sectors">
-            Which division will this class be under?<span>*</span>
+            Which group is this class under?<span>*</span>
           </label>
           <div id="sectors" className="item__sector">
             <select required>
