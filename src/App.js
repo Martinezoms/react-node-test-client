@@ -1,5 +1,4 @@
 import View from './View';
-import './App.scss';
 
 const App = () => {
   return (

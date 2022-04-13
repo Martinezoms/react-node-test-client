@@ -50,9 +50,14 @@
      }
     }
 
-    & .sub-sector {
+    & .input-add-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 1;
       button {
         cursor: pointer;
+        padding: 10px 10px;
         background: #04AA6D;
         border-radius: 5px;
         border: 0 ;
