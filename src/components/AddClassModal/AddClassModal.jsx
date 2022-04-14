@@ -24,7 +24,7 @@ const AddClassModal = ({
           </label>
           <div id="sectors" className="item__sector">
             <select onChange={(e) => handleGroupSelection(e)}>
-              <option style={{ color: 'gray' }}>Select option</option>
+              <option style={{ color: 'gray' }}> </option>
               {groups.map((group) => (
                 <option key={group.id} id={group.id}>
                   {group.name}
